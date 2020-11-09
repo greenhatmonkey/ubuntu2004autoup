@@ -64,7 +64,7 @@ function backup_doc()
 
 function uncomment_updates()
 {
-sed -i 's/\/\/ * "\${distro_id}\:\${distro_codename}-updates";/\t"\${distro_id}\:\${distro_codename}-updates";/g' $filename
+sed -i 's/\/\/\t"\${distro_id}\:\${distro_codename}-updates";/\t"\${distro_id}\:\${distro_codename}-updates";/g' $filename
 }
 
 ##-----------------------------------------------------
