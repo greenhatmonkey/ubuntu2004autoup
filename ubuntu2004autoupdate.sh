@@ -175,7 +175,7 @@ function check_apticron()
 		sudo apt update && sudo apt install apticron -y
 	fi
 
-	if [ -d /etc/apticron && ! -f /etc/apticron/apticron.conf ]; then
+	if [[ -d /etc/apticron && ! -f /etc/apticron/apticron.conf ]]; then
 		touch /etc/apticron/apticron.conf
 		printf "EMAIL=\"$email_add_send\"\n" >> /etc/apticron/apticron.conf
 	fi
